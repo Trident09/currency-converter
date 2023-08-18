@@ -120,43 +120,47 @@
 		/>
 	</head>
 	<body>
-        <div class="wrapper">
-            <header>
-                CURRENCY CONVERTER
-            </header>
-            <form action="#">
-                <div class="amount">
-                    <p>Enter amount</p>
-                    <input type="text" value="1" name="" id="">
-                </div>
-                <div class="drop-list">
-                    <div class="from">
-                        <p>From</p>
-                        <div class="select-box">
-                            <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
-                            <select>
-                                <option value="USD">USD</option>
-                                <option value="INR">INR</option>
-                                <option value="GBP">GBP</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-                    <div class="to">
-                        <p>To</p>
-                        <div class="select-box">
-                            <img src="https://flagsapi.com/GB/flat/64.png" alt="flag">
-                            <select>
-                                <option value="USD">USD</option>
-                                <option value="INR">INR</option>
-                                <option value="GBP">GBP</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="exchange-rate">1 USD = 10 INR</div>
+		<div class="wrapper">
+			<header>CURRENCY CONVERTER</header>
+			<form action="#">
+				<div class="amount">
+					<p>Enter amount</p>
+					<input
+						type="text"
+						value="1"
+						name="currency-amount"
+					/>
+				</div>
+				<div class="drop-list">
+					<div class="from">
+						<p>From</p>
+						<div class="select-box">
+							<img
+								src="https://flagsapi.com/AE/flat/64.png"
+								alt="flag"
+							/>
+							<select></select>
+						</div>
+					</div>
+					<div class="icon">
+						<i class="fas fa-exchange-alt"></i>
+					</div>
+					<div class="to">
+						<p>To</p>
+						<div class="select-box">
+							<img
+								src="https://flagsapi.com/AE/flat/64.png"
+								alt="flag"
+							/>
+							<select></select>
+						</div>
+					</div>
+				</div>
+				<div class="exchange-rate">Getting Exchange Rate...</div>
 				<button>Get Exchange Rate</button>
-            </form>
-        </div>
-    </body>
+			</form>
+		</div>
+		<script src="./js/country-list.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
